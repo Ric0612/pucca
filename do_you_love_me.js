@@ -10,7 +10,7 @@ noBtn.addEventListener("mouseover", () => {
   const newX = Math.random() * (questionContainer.offsetWidth - noBtn.offsetWidth);
   const newY = Math.random() * (questionContainer.offsetHeight - noBtn.offsetHeight);
 
-  noBtn.style.position = "absolute"; // Ensure the button is absolutely positioned
+  noBtn.style.position = "absolute";
   noBtn.style.left = `${newX}px`;
   noBtn.style.top = `${newY}px`;
 });
@@ -23,6 +23,6 @@ yesBtn.addEventListener("click", () => {
   setTimeout(() => {
     heartLoader.style.display = "none";
     resultContainer.style.display = "block";
-    gifResult.play(); // Play the video when it's displayed
+    gifResult.play();
   }, 3000);
 });
